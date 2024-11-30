@@ -1,9 +1,9 @@
 
-import './App.css';
+import './Stylesheet/App.css';
 import Navbar from './Navbar';
-import Home from './Home';
-import Dashboard from './Dashboard';
-import Login from './Login';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
 
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -18,8 +18,8 @@ function App() {
               <div className="content">
                   <Routes>
                       <Route path="/" element={<Home/>}/>
-                      <Route path="/Login" element={<Login/>}/>
-                      <Route path="/Dashboard" element={<Dashboard/>}/>
+                      <Route path="/pages/Login" element={<Login/>}/>
+                      <Route path="/pages/Dashboard" element={<Dashboard/>}/>
                   </Routes>
               </div>
           </Router>

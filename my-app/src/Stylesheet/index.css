@@ -9,6 +9,10 @@ li{
   list-style: none;
 }
 
+main{
+  padding: 2rem;
+}
+
 
 /*navbar*/
 .navbar {
@@ -22,7 +26,7 @@ li{
 .navbar h1 {
   color: black;
 }
-.navbar .links {
+.navbar {
   margin-left: auto;
 }
 .navbar a {
@@ -37,7 +41,9 @@ a{
 .ListItems li:hover {
   text-decoration: underline black solid;
 }
-.test {
+
+
+.ListLink {
   display: flex;
   gap: 1rem;
 
@@ -54,10 +60,9 @@ a{
   row-gap: 2rem;
 
 }
-.about{
-}
 
-@media (max-width:  500px) {
+
+@media (max-width:  600px) {
   img{
     width: 250px;
 
@@ -65,9 +70,11 @@ a{
 
 }
 
-@media (min-width:  500px) {
+@media (min-width:  600px) {
   img {
-    width: 400px;
+    min-width : 350px;
+    object-fit: cover;
+    max-width: 100%;
 
   }
   .ListItems{
@@ -76,7 +83,7 @@ a{
   }
   .imagesStyling{
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: auto;
     gap: 1rem;
   }
 
@@ -88,7 +95,32 @@ a{
 @media (min-width:  1200px) {
   .imagesStyling{
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns:  auto auto auto;
   }
+
+}
+
+
+/*login page*/
+
+form{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+
+}
+
+button{
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 15px;
 
 }

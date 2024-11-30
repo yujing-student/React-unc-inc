@@ -4,7 +4,8 @@ const Dashbaord = () => {
     return (
         <main className="">
             <section>
-                <h2>Dashbaord</h2>
+                <h2>Dashboard</h2>
+                <p>Welkom u bent ingelogd</p>
             </section>
         </main>
     );

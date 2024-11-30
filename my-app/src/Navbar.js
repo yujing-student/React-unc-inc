@@ -1,4 +1,4 @@
-import logo from './logo-unc-inc.png';
+import logo from './img/logo-unc-inc.png';
 
 const Navbar = () => {
     return (
@@ -8,14 +8,17 @@ const Navbar = () => {
             <img src={logo} alt="project of unc inc"/>
             <ul className="ListItems">
                 <li>
-                    <a className="test" href="/">Home</a>
+                    <a className="ListLink" href="/">Home</a>
                 </li>
                 <li>
 
-                    <a className="test" href="/Dashboard">Dashboard</a>
+                    <a className="ListLink" href="/pages/Dashboard">Dashboard</a>
                 </li>
                 <li>
-                    <a className="test" href="/Login">Login</a>
+                    <a className="ListLink" href="/pages/Login">Login</a>
+                </li>
+                <li>
+                    <a className="ListLink" href="/pages/Account">Account</a>
                 </li>
             </ul>
         </nav>

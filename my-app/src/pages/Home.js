@@ -1,8 +1,8 @@
 
 // import React from 'react';
-import Project from './project-unc-inc.png';
-import image1 from './project1.jpg';
-import image3 from './project2.jpg';
+import Project from '../img/project-unc-inc.png';
+import image1 from '../img/project1.jpg';
+import image3 from '../img/project2.jpg';
 
 
 
