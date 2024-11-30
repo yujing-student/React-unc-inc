@@ -17,10 +17,10 @@ const Home = () => {
             <p>You can also login to the form </p>
             </section>
 
-            <section>
+            <section className="about">
                 <h2>About Unc inc</h2>
                 <p>On this page you can see the projects of unc inc</p>
-                <ul>
+                <ul className="imagesStyling">
                     <li>
 
                         <img src={Project} alt="project of unc inc" />
