@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
+
 const Login = () => {
 
     // https://www.geeksforgeeks.org/reactjs-usenavigate-hook/
@@ -8,11 +9,15 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-
     const corectname = 'uncinc'
     const corectpassword = 'letmein'
 
-    let [isLoggedIn, setIsLoggedIn] = useState(false);
+    // here is the standard value false but that must be depending on the user login
+
+    let [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('user',JSON.stringify(username),
+        localStorage.setItem('password',JSON.stringify(password)),
+
+    ));
 
 
     const handleLogin = () => {
@@ -20,21 +25,21 @@ const Login = () => {
         setIsLoggedIn(true);
         localStorage.setItem('user', JSON.stringify(username))
         localStorage.setItem('password', JSON.stringify(password))
-        // ... actual login logic
+
     };
+
     const handleLogout = () => {
 
         setIsLoggedIn(false);
         localStorage.removeItem('user', JSON.stringify(username))
         localStorage.removeItem('password', JSON.stringify(password))
-        // ... actual login logic
     };
+
 
     function handleSubmit(event) {
         event.preventDefault()
 
         if (username === corectname && password === corectpassword) {
-
             handleLogin ()
             console.log('login');
             navigate('../pages/Dashboard');
@@ -59,7 +64,8 @@ const Login = () => {
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit}>
-                        <label>usre input:</label>
+                        {console.log('we hebben uw gegevens nog niet')}
+                        <label>user input:</label>
                         <input
                             type="text"
                             required
