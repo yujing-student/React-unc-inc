@@ -4,14 +4,14 @@ const Navbar = () => {
             <h1>Unc inc</h1>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a className="test" href="/">Home</a>
                 </li>
                 <li>
 
-                    <a href="/Dashboard">Dashboard</a>
+                    <a className="test" href="/Dashboard">Dashboard</a>
                 </li>
                 <li>
-                    <a href="/Login">Login</a>
+                    <a className="test" href="/Login">Login</a>
                 </li>
             </ul>
         </nav>
