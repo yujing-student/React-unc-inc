@@ -14,10 +14,6 @@ understand differences between yarn and npm</a>
 <a href="https://airbnb.io/javascript/react/">read the react and airbnb standard </a>
 
 </li>
-
-<li>
-<a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable">install yarn</a>
-</li>
  
 <li>
 <a href="https://create-react-app.dev/docs/getting-started/">install react 17 or higher with yarn create React app</a>
