@@ -12,7 +12,7 @@ const Navbar = () => {
                 </li>
                 <li>
 
-                    <a className="ListLink" href="/pages/Dashboard">Dashboard</a>
+                    <a className="ListLink disabled" href="/pages/Dashboard">Dashboard</a>
                 </li>
                 <li>
                     <a className="ListLink" href="/pages/Login">Login</a>
