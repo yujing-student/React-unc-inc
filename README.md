@@ -3,7 +3,10 @@
 
 ![image](https://github.com/user-attachments/assets/190f2b40-0cd5-4f51-b106-bb5a1f1e4351)
 
-<h2>choices that i made</h2>
+
+
+
+<h2>choices that I made</h2>
 <p>when i started with this project i did not expect that i can make a form where the user can login and where data is stored so i will tel you what my stratagy is to make this application</p>
 
 here you can see the steps what i followed to make this page and there is a `plan-making-react-assingment` where you can see how i am going to start with this project.
