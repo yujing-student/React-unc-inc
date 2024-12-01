@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
-
 // here above are the imports
 // const login is a react component
 const Login = () => {
@@ -97,7 +96,7 @@ const Login = () => {
                     <div>
                         <p>Welkom u bent ingelogd</p>
                         {console.log('we have a username '+ corectname+ ' password ' + corectpassword)}
-                        <button onClick={handleLogout}>log out</button>
+                        <button onClick={handleLogout} >log out</button>
                     </div>
                 //     : else show the form
                 ) : (
