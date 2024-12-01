@@ -110,15 +110,13 @@ a {
 .content {
     margin: 40px auto;
     padding: 20px;
-}
-
-.home {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-
 }
 
+
+/*media query with mutlple pages*/
 
 @media (max-width: 600px) {
     img {

@@ -84,13 +84,5 @@ const AuthencitationCheck= () => {
         }
 
     }
-
-    return (
-        <main className="">
-            <section>
-
-            </section>
-        </main>
-    );
 }
 export default AuthencitationCheck;
