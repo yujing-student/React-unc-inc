@@ -1,8 +1,7 @@
 import {useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 
-
-const Dashbaord = () => {
+const Autent= () => {
 
     // https://www.geeksforgeeks.org/reactjs-usenavigate-hook/
     const navigate = useNavigate();
@@ -23,7 +22,6 @@ const Dashbaord = () => {
 
 
     // setIsLoggedIn that is now false but that must be true if the credentials are stored in localStorage
-    // setIsLoggedIn that is now false but that must be true if the credentials are stored in localStorage
     let [isLoggedIn, setIsLoggedIn] = useState(false)
 
     console.log(isLoggedIn +' empty state')//log the false empty state if there is no data in localstorage and
@@ -35,7 +33,6 @@ const Dashbaord = () => {
         localStorage.setItem('isLoggedIn',true);
         localStorage.setItem('user', JSON.stringify(username))
         localStorage.setItem('password', JSON.stringify(password))
-        setIsLoggedIn(true);//
 
 
     };
@@ -58,14 +55,11 @@ const Dashbaord = () => {
     const handleLogout = () => {
         localStorage.removeItem('uncinc') //remove the username
         localStorage.removeItem('letmein')//remove the password
-        navigate('../pages/Login');
+
         localStorage.setItem('isLoggedIn',false);
         localStorage.clear();
-        setIsLoggedIn(false);//set it to false
-
 
     };
-
 
     // handlesubmit
 
@@ -90,28 +84,13 @@ const Dashbaord = () => {
         }
 
     }
+
     return (
         <main className="">
             <section>
-                <h2>Dashboard</h2>
-                {isLoggedIn === true ? (
-                    <div>
-                        <p>Welkom u bent ingelogd</p>
-                        {console.log('we have a username ' + corectname + ' password ' + corectpassword)}
-                        <button onClick={handleLogout}>log out</button>
-                    </div>
-                    //     : else show the form
-                ) : (
-                    //{/*https://legacy.reactjs.org/docs/forms.html*/}
-                   <p>u hebt geen toegang</p>
-                )}
-
 
             </section>
-
-
         </main>
     );
 }
-
-export default Dashbaord;
+export default Autent;

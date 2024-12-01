@@ -1,8 +1,14 @@
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
+
+
+//trying to use a component
+import Autent from "../components/Aut";
 // here above are the imports
 // const login is a react component
 const Login = () => {
+
+
 
     // https://www.geeksforgeeks.org/reactjs-usenavigate-hook/
     const navigate = useNavigate();
@@ -34,6 +40,7 @@ const Login = () => {
         localStorage.setItem('isLoggedIn',true);
         localStorage.setItem('user', JSON.stringify(username))
         localStorage.setItem('password', JSON.stringify(password))
+        setIsLoggedIn(true);//
 
 
     };
@@ -56,11 +63,14 @@ const Login = () => {
     const handleLogout = () => {
         localStorage.removeItem('uncinc') //remove the username
         localStorage.removeItem('letmein')//remove the password
-
+        navigate('../pages/Login');
         localStorage.setItem('isLoggedIn',false);
         localStorage.clear();
+        setIsLoggedIn(false);//set it to false
+
 
     };
+
 
     // handlesubmit
 
