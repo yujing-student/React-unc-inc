@@ -1,14 +1,13 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
-
 //trying to use a component
-import Autent from "../components/Aut";
+import Autent from "../components/Autthencitation";
 // here above are the imports
+
+
 // const login is a react component
 const Login = () => {
-
-
 
     // https://www.geeksforgeeks.org/reactjs-usenavigate-hook/
     const navigate = useNavigate();
@@ -31,13 +30,14 @@ const Login = () => {
     // setIsLoggedIn that is now false but that must be true if the credentials are stored in localStorage
     let [isLoggedIn, setIsLoggedIn] = useState(false)
 
-    console.log(isLoggedIn +' empty state')//log the false empty state if there is no data in localstorage and
+    console.log(isLoggedIn + ' empty state')//log the false empty state if there is no data in localstorage and
     // set it to true if there is data
 
     // here the data is stored if the user has logged in
     // by application local storage there you can see the data
+    // https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
     const handleLogin = () => {
-        localStorage.setItem('isLoggedIn',true);
+        localStorage.setItem('isLoggedIn', true);
         localStorage.setItem('user', JSON.stringify(username))
         localStorage.setItem('password', JSON.stringify(password))
         setIsLoggedIn(true);//
@@ -52,8 +52,7 @@ const Login = () => {
         if (checkValue === 'true') {//check if isloggedin is true
             setIsLoggedIn(true);//set this to true
 
-        }
-        else {
+        } else {
             setIsLoggedIn(false);//set it to false
 
         }
@@ -64,7 +63,7 @@ const Login = () => {
         localStorage.removeItem('uncinc') //remove the username
         localStorage.removeItem('letmein')//remove the password
         navigate('../pages/Login');
-        localStorage.setItem('isLoggedIn',false);
+        localStorage.setItem('isLoggedIn', false);
         localStorage.clear();
         setIsLoggedIn(false);//set it to false
 
@@ -77,14 +76,14 @@ const Login = () => {
     function handleSubmit(event) {
         event.preventDefault()
         // if islogged seth the value to true
-        if(isLoggedIn) {
+        if (isLoggedIn) {
             setIsLoggedIn(true)
 
         }
 
         // if the username and password are correct do a callback to the handle login and navigate to dashbaord
         if (username === corectname && password === corectpassword) {
-            handleLogin ()
+            handleLogin()
             console.log('you are logged in');
             navigate('../pages/Dashboard');
 
@@ -105,10 +104,10 @@ const Login = () => {
                 {isLoggedIn === true ? (
                     <div>
                         <p>Welkom u bent ingelogd</p>
-                        {console.log('we have a username '+ corectname+ ' password ' + corectpassword)}
-                        <button onClick={handleLogout} >log out</button>
+                        {console.log('we have a username ' + corectname + ' password ' + corectpassword)}
+                        <button onClick={handleLogout}>log out</button>
                     </div>
-                //     : else show the form
+                    //     : else show the form
                 ) : (
                     //{/*https://legacy.reactjs.org/docs/forms.html*/}
                     <form onSubmit={handleSubmit}>

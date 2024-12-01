@@ -1,6 +1,6 @@
 
 import './Stylesheet/App.css';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';

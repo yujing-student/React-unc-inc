@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
-import {useEffect, useState} from "react";
-
+import React, {useEffect, useState} from "react";
+import Autthencitation from "../components/Autthencitation";
 
 const Dashbaord = () => {
 
@@ -94,6 +94,7 @@ const Dashbaord = () => {
         <main className="">
             <section>
                 <h2>Dashboard</h2>
+
                 {isLoggedIn === true ? (
                     <div>
                         <p>Welkom u bent ingelogd</p>

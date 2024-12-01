@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 
-const Autent= () => {
+const AuthencitationCheck= () => {
 
     // https://www.geeksforgeeks.org/reactjs-usenavigate-hook/
     const navigate = useNavigate();
@@ -93,4 +93,4 @@ const Autent= () => {
         </main>
     );
 }
-export default Autent;
+export default AuthencitationCheck;
