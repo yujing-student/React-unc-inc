@@ -27,3 +27,18 @@ the ol list that you see here is how i tackled this project with multiple steps 
 </ol>
 
 In the <a href="https://github.com/yujing-student/React-unc-inc/wiki">wiki you can see more about the code explanation and how i have been tesing my website
+
+
+<h2>installation</h2>
+you click on the green button and you can clone the project
+<br>
+thatn you enter
+```
+cd .\React-unc-inc\
+```
+<br>
+after that you enter `cd my-app`<br>
+in the terminal you enter `yarn install`<br>
+when this is finsih you can enter `yarn start` 
+<br>
+and than in the terminal the webpage is going to open in the browser
