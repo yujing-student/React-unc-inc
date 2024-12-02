@@ -112,14 +112,14 @@ const Login = () => {
                     //{/*https://legacy.reactjs.org/docs/forms.html*/}
                     <form onSubmit={handleSubmit}>
                         {console.log('we do not have your data')}
-                        <label>user input:</label>
+                        <label>Username:</label>
                         <input
                             type="text"
                             required
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                         />
-                        <label>geef het wachtwooord op:</label>
+                        <label>password:</label>
                         <input type="password"
                                required
                                value={password}
