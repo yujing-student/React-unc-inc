@@ -55,14 +55,14 @@ const Dashbaord = () => {
                 <h2>Dashboard</h2>
                 {isLoggedIn === true ? (
                     <div>
-                        <p>Welkom u bent ingelogd</p>
+                        <p>welcome you are logged in</p>
                         {console.log('we have a username ' + corectname + ' password ' + corectpassword)}
                         <button onClick={handleLogout}>log out</button>
                     </div>
                     //     : else show the form
                 ) : (
                     //{/*https://legacy.reactjs.org/docs/forms.html*/}
-                   <p>u hebt geen toegang</p>
+                   <p>you have no access</p>
                 )}
 
 

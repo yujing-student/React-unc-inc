@@ -103,7 +103,7 @@ const Login = () => {
                 {/*ternary operator if islogged === true show the welcome message else show the input form*/}
                 {isLoggedIn === true ? (
                     <div>
-                        <p>Welkom u bent ingelogd</p>
+                        <p>welcome you are logged in</p>
                         {console.log('we have a username ' + corectname + ' password ' + corectpassword)}
                         <button onClick={handleLogout}>log out</button>
                     </div>
